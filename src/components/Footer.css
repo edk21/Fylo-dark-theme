@@ -1,0 +1,152 @@
+.footer-container{
+    background-color: #0c1524;
+    overflow-y: visible;
+    margin-top: -140px;
+    padding: 0 30px 30px 30px;
+}
+.footer-wrapper{
+    padding-top: 300px;
+}
+.footer-logo{
+    cursor: pointer;
+}
+.footer-infos{
+    display: grid;
+    grid-template-columns: 2.5fr 1.5fr 1fr 1fr 1fr;
+}
+.location{
+    display: flex;
+    align-items: center;
+}
+.location img{
+    height: 20px;
+}
+.location p{
+    margin-left: 20px;
+    color: #fff;
+    opacity: 0.6;
+}
+.contact-means{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-means .phone{
+    display: flex;
+    align-items: center;
+}
+.contact-means .phone img{
+    height: 20px;
+    padding-right: 10px;
+}
+.contact-means .mail{
+    display: flex;
+    align-items: center;
+}
+.contact-means .mail img{
+    height: 20px;
+    padding-right: 10px;
+}
+.aboutus ul li{
+    margin-top: 10px;
+}
+.aboutus ul li a{
+    color: #fff;
+    opacity: 0.5;
+    transition: 0.3s ease-in-out;
+}
+.aboutus ul li:hover a{
+    opacity: 1;
+}
+.contactus ul li{
+    margin-top: 10px;
+}
+.contactus ul li a{
+    color: #fff;
+    opacity: 0.5;
+    transition: 0.3s ease-in-out;
+}
+.contactus ul li:hover a{
+    opacity: 1;
+}
+.social{
+    display: flex;
+    color: #fff;
+}
+.social-icon{
+    margin-left: 10px;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+.social-icon:nth-child(1){
+    border: 1px solid rgb(24, 119, 242);
+}
+.social-icon:nth-child(2){
+    border: 1px solid rgb(29, 161, 242);
+}
+.social-icon:nth-child(3){
+    border: 1px solid rgb(89, 109, 215);
+}
+.social-icon:hover:nth-child(1){
+    color: rgb(24, 119, 242);
+    border: 1px solid #fff;
+}
+.social-icon:hover:nth-child(2){
+    color: rgb(29, 161, 242);
+    border: 1px solid #fff;
+}
+.social-icon:hover:nth-child(3){
+    color: rgb(89, 109, 215);
+    border: 1px solid #fff;
+}
+
+@media screen and  (max-width: 768px){
+    .footer-infos{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        width: 500px;
+    }
+    .logo-info p{
+        font-size: 20px;
+    }
+    .contact-means{
+        color: #fff;
+        align-self: left;
+    }
+    .contact-means .phone{
+        margin-left: -340px;
+    }
+    .contact-means .mail{
+        margin-left: -330px;
+    }
+    .aboutus ul{
+        margin-top: -20px;
+    }
+    .aboutus ul li a{
+        color: #fff;
+        opacity: 0.5;
+        transition: 0.3s ease-in-out;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .contactus ul li a{
+        color: #fff;
+        opacity: 0.5;
+        transition: 0.3s ease-in-out;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .social{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

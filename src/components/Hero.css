@@ -1,0 +1,127 @@
+.container{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+.container .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10rem;
+}
+.container .logo img{
+    width: 600px;
+    height: 500px;
+}
+
+.text-wrapper{
+    width: 2500px;
+    height: 800px;
+    background-image: url("../images/bg-curvy-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    overflow: auto;
+    margin-top: -200px;
+    
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    width: 750px;
+    padding: 0 10px 0 10px;
+    
+}
+.text h1{
+    display: flex;
+    align-self: center;
+    text-align: center;
+    color: #fff;
+}
+.text p{
+    display: flex;
+    align-self: center;
+    text-align: center;
+    color: #fff;
+    opacity: 0.6;
+    margin-bottom: 60px;
+    line-height: 25px;
+    letter-spacing: 1.1px;
+}
+button{
+    width: 200px;
+    padding: 15px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: rgb(42, 143, 211);
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+    margin-bottom: -200px;
+    z-index: -1;
+}
+button:hover{
+    background-color: rgba(42, 143, 211, 0.5);
+}
+
+@media screen and (max-width: 768px){
+    .container{
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+    }
+    .container .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5rem;
+        overflow: visible;
+        width: 30rem;
+    }
+    .container .logo img{
+       /* width: 400px;
+         height: 400px; */
+         margin-bottom: -100px;
+    }
+    
+    .text-wrapper{
+        width: 1000px;
+        height: 600px;
+        background-image: url("../images/bg-curvy-mobile.svg");
+        background-position: center;
+        background-repeat: repeat-x;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+    } 
+    .text-wrapper .text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+        width: 500px;
+    }
+    .text h1{
+        /* text-align: center;
+        color: #fff;
+        font-size: 20px; */
+    }
+    .text p{
+        /* text-align: center;
+        color: #fff;
+        opacity: 0.6;
+        padding-bottom: 10px;
+        line-height: 20px;
+        letter-spacing: 1.1px; */
+    }
+}

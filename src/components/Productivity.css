@@ -1,0 +1,49 @@
+.wrapper{
+    display: flex;
+    background-color: rgb(24, 31, 43);
+    justify-content: space-evenly;
+    padding: 50px;
+}
+.pic img{
+    height: 350px;
+}
+.texte{
+    margin-left: 30px;
+    margin-top: 50px;
+}
+.texte h1{
+    color: #fff;
+}
+.texte p{
+    color: #fff;
+    opacity: 0.6;
+}
+.texte a{
+    color: green;
+    text-decoration: underline;
+}
+.fas, .fa-arrow-circle-right{
+    color: green;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 768px){
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .texte h1{
+        text-align: center;
+    }
+    .texte p{
+        text-align: center;
+        margin-top: 20px;
+    }
+    .texte a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
